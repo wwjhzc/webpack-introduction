@@ -15,4 +15,4 @@
 + 新建webpack.config.js文件，对其进行输入输出的配置
     - 定义入口文件为 main.js
     - 输出文件为 dist下的bundle.js
-+ 准备完成，npm start 运行webpack
++ 准备完成，npm run start 运行webpack

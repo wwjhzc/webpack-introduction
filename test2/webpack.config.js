@@ -6,5 +6,14 @@ module.exports = {
         filename: 'bundle.js',
         // 将输出文件都放到dist目录下
         path: path.resolve(__dirname, './dist')
+    },
+    module: {
+        rules: [
+            {
+                // 用正则表达式去匹配要用该Loader转换的CSS文件
+                test: /\.css$/,
+                use: ['style-loader', 'css-loader?minimize']
+            }
+        ]
     }
 }
